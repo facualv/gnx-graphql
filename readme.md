@@ -1,0 +1,1 @@
+# Servidor GraphQL-GNX

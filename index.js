@@ -21,4 +21,4 @@ const includedTypes = Object.values(types);
 const schema = gnx.createSchema(includedTypes, includedTypes);
 
 server.use("/graphql", graphqlHTTP({ schema, graphiql: true }));
-server.use(NotFoundMiddleware, NotFoundMiddleware);
+server.use(NotFoundMiddleware, ErrorMiddleware);
